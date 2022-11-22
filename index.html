@@ -1,94 +1,130 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-<meta charset="UTF-8">
-<title> Web開発の練習2</title>
-  
-<link rel="stylesheet" href="mystyle.css"> <!-- この行を追加 -->
-<script src="myjs.js"></script> <!-- この行を追加 -->
-<script src="./JS/1.js"></script>
-<script src="ex06-1.js"></script>
-<script src="ex06-4.js"></script>
-<script src="ex06-5.js"></script>
-<script src="ex06-6.js"></script>
-<script src="ex06-7.js"></script>
-<script src="ex06-8.js"></script>
-<script src="ex06-9.js"></script>
-</head>
-<body>
+ 
 
-<h1>練習問題2.4</h1>
-<table>
-<caption><strong>お寿司をどこで食べるか？その長所と短所</strong>
-<details><summary>このテーブルの説明</summary>
+<head>
+  <meta charset="UTF-8">
+  <title> Wed開発の練習2</title>
+ <link rel="stylesheet" href="mystyle.css"> 
+ <link rel="stylesheet" href="imagechange.css">
+ 
+ <script src="myjs.js"></script>
+ <script src="ex6-1.js"></script>
+ <script src="ex6-2.js"></script>
+ <script src="ex6-5.js"></script>
+ <script src="ex6-6.js"></script>
+ <script src="ex6-7.js"></script>
+ <script src="ex6-8.js"></script>
+ <script src="ex6-88.js"></script>
+ <script src="ex6-9.js"></script>
+ <script src="ex06-10.js"></script>
+ <script src="ex06-11.js"></script>
+ 
+</head>
+
+ 
+
+<body>
+ 
+ 
+ <h1>練習問題2.4</h1>
+ 
+ 
+ 
+ <table>
+<caption>
+<strong>お寿司をどこで食べるか？その長所と短所</strong>
+<details>
+<summary>このテーブルの説明</summary>
 <p>以下のテーブルでは、２番目のカラムに寿司店のタイプが入れられています。その左側にそのようなタイプのお店でお寿司を食べる場合の長所が、右側に短所が入れられています。</p>
 </details>
 </caption>
 <thead>
-<tr><th class="important">長所</th><th>どこで食べるか</th><th>短所</th></tr></thead>
+<tr><th class="important">長所</th><th>どこで食べるか</th><th>短所</th></tr>
+</thead>
 <tbody>
-<tr><td>ネタにこだわり、技術が素晴らしい</td>
-<th>銀座の高級店</th><td>値段が時価で不安、予約が必要</td></tr>
-<tr><td>値段が良心的、気軽に手に取れる</td>
-<th>回転寿司</th><td>ネタが解凍もの、休みの日は混む</td></tr>
+<tr><td>ネタにこだわり、技術が素晴らしい</td><th>銀座の高級店</th><td>値段が時価で不安、予約が必要</td></tr>
+<tr><td>値段が良心的、気軽に手に取れる</td><th>回転寿司</th><td>ネタが解凍もの、休みの日は混む</td></tr>
 </tbody>
-</table> 
-<p>
-<p>
-<table>
-<caption><strong>お寿司をどこで食べるか？その長所と短所</strong></caption>
+</table>
+ 
+ <table>
+<caption>
+<strong>お寿司をどこで食べるか？その長所と短所</strong>
+</caption>
 <thead>
 <tr><th>どこで食べるか</th><th class="important">長所</th><th>短所</th></tr>
 </thead>
- <tbody>
+<tbody>
 <tr><th>銀座の高級店</th><td>ネタにこだわり、技術が素晴らしい</td><td>値段が時価で不安、予約が必要</td></tr>
 <tr><th>回転寿司</th><td>値段が良心的、気軽に手に取れる</td><td>ネタが解凍もの、休みの日は混む</td></tr>
 </tbody>
 </table>
-<br>
-<p class="sample1">セキュリティ対策は今後ますます重要になるでしょう。</p>
-<p class="sample2">セキュリティ対策は今後ますます重要になるでしょう。</p>
-<p class="sample3">セキュリティ対策は今後ますます重要になるでしょう。</p>
-<br>
-<h1>練習問題6.2</h1>
-<input type="button" value="ここをクリック" onclick="sayhello61();">
-<br>
-<h1>練習問題6.3</h1>
-<input type="button" value="ここをクリック" onclick="sayhello61();sayhello61();">
-<br>
-<h1>練習問題6.4</h1>
-<input type="button" value="ここをクリック" onclick="goodbye();">
-<br>
-<h1>変数の練習</h1>
-<input type="button" value="あいさつ" onclick="sayhello65();">
-<input type="button" value="太郎" onclick="taro65();">
-<input type="button" value="花子" onclick="hanako65();">
-<br>
-<h1>練習問題6.6</h1>
-<input type="button" value="あいさつ" onclick="sayhello66();">
-<input type="button" value="太郎" onclick="taro66();">
-<input type="button" value="花子" onclick="hanako66();">
-<br>
-<h1>練習問題6-7 引数の練習</h1>
-<input type="button" value="あいさつ" onclick="sayhello67();">
-<input type="button" value="太郎" onclick="someone('太郎');">
-<input type="button" value="花子" onclick="someone('花子');">
-<input type="button" value="レイ" onclick="someone('レイ');">
-<input type="button" value="シンジ" onclick="someone('シンジ');"> 
-<input type="button" value="アスカ" onclick="someone('アスカ');">
-<br>
-<h1>練習問題6-8JavaScriptによる変更の練習</h1>
-<input type="button" value="あいさつ" onclick="sayhello68();">
-<input type="button" value="太郎" onclick="taro68();">
-<input type="button" value="花子" onclick="hanako68();">
-<p id="who68">world</p>
-<br>
-<h1>練習問題6-9JavaScriptによるページの変更</h1>
-<div id="txt1" >
-<input type="button" value="テキストの変更" 
-onclick="txtchange1();">
-城西大学</div>
-</body>
+ 
+ 
+ <p class="sample1">セキュリティ対策は今後ますます重要になるでしょう。</p>
+ <p class="sample2">セキュリティ対策は今後ますます重要になるでしょう。</p>
+ <p class="sample3">セキュリティ対策は今後ますます重要になるでしょう。</p>
+ 
+ <h1>練習問題6.2</h1>
+ <input type="button" value="ここをクリック" onclick="sayhello61();">
+  
+  <h1>練習問題6.3</h1>
+ <input type="button" value="ここをクリック" onclick="sayhello61();sayhello61();">
+ 
+ <h1>練習問題6.4</h1>
+ <input type="button" value="ここをクリック" onclick="saygoodbye();">
+ 
+ <h1>練習問題6.5変数への代入</h1>
+ <input type="button" value="あいさつ" onclick="sayhello65();">
+ <input type="button" value="太郎" onclick="taro65();">
+ <input type="button" value="花子" onclick="hanako65();">
+ 
+ <h1>練習問題6.6</h1>
+ <input type="button" value="あいさつ" onclick="sayhello66();">
+ <input type="button" value="太郎" onclick="taro66();">
+ <input type="button" value="花子" onclick="hanako66();">
+ 
+ <h1>練習問題6.7 引数の練習</h1>
+ <input type="button" value="あいさつ" onclick="sayhello67();">
+ <input type="button" value="太郎" onclick="someone('太郎');">
+ <input type="button" value="花子" onclick="someone('花子');">
+ <input type="button" value="レイ" onclick="someone('レイ');">
+ <input type="button" value="シンジ" onclick="someone('シンジ');">
+ <input type="button" value="アスカ" onclick="someone('アスカ');">
+ 
+  <h1>練習問題6.8 JavaScriptによる変更の練習</h1>
+  <input type="button" value="あいさつ" onclick="sayhello68();">
+  <input type="button" value="太郎" onclick="taro68();">
+  <input type="button" value="花子" onclick="hanako68();">
+  <p id="who68">world</p>
+ 
+   <h1>練習問題6.88 InnerHTMLによる変更の練習</h1>
+   <p id="img1">
+   <input type="button" value="画像の変更" onclick="gazouhenko();">
+   <img src="./image/城西大学.jpg" alt="keiei">
+   </p>
+ 
+ <h1>練習問題6.9 JavaScriptによるページの変更</h1>
+  <div id="txt1">
+  <input type="button" value="テキストの変更" onclick="txtchange1();"> 　城西大学
+ </div>
+ 
+ <h1>練習問題6.10JavaScriptによるページの変更</h1>
+ <input type="button" value="画像の変更" onclick="imgchange();">
+ <input type="button" value="元に戻す" onclick="imgchange1();">
+ <img src="./image/城西大学3.jpg" id="logo" alt="keiei" class="imagechange">
+ 
+ <h1>練習問題6.11タイマーイベントによる実行</h1>
+ <form name="timer"> 
+  <input type="button" value="スタート" onclick="startfnc()">
+  <br> 
+  <input type="text" name="moji" size="30" value=""> 
+ </form>
+ 
+  <form>
+   <input type="button" value="Timer" onclick="setTimeout('mes()',3000)">
+   </form>
+  </body>
 </html>
-
