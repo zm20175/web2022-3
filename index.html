@@ -20,6 +20,7 @@
  <script src="ex6-9.js"></script>
  <script src="ex06-10.js"></script>
  <script src="ex06-11.js"></script>
+ <script src="ex06-13.js"></script>
  <script src="ex07-1.js"></script>
  <script src="ex07-3.js"></script>
  <script src="ex07-5.js"></script>
@@ -141,31 +142,25 @@
  </form>
  
  <h1>練習問題6.13タイマーイベントによる実行</h1>
- function hyoji13(){
- //表示する文字
- var str13="一文字ずつ表示します。";
- //テキストボックスの文字数
- var cnt13=document.timer13.moji13.value.length;
- //文字が全部表示されているか確認
- if(cnt13<11){
-               //現在より１文字多く切り出して表示
-               document.timer13.moji13.value=str13.substr(0,cnt13+1);}else{
-               //全て表示されたら、空文字に戻す
-               document.timer13.moji13.value="",}
-               //setTimeout()を含む関数を呼び出す
-               setTimeout("hyoji13()",1000);}
+ <form name="timer13"> 
+ <input type="button" value="スタート" onclick="hyoji13()">
+  <br> 
+  <input type="text" name="moji13" size="30" value=""> 
+  </form>
+ 
+ 
                
-       <h1>テキスト入力の練習</h1>
+       <h1> 練習問題7.1テキスト入力の練習</h1>
  <input type="button" value="あいさつ" onclick="sayhello71();">
  <p>誰？<input type="text" id="who71"></p>        
  
- <h1>足し算</h1>
+ <h1>練習問題7.3足し算</h1>
  <p>
   <input type="text" id="input1">+<input type="text" id="input2">
   <input type="button" value="計算" onclick="add();">
  </p>  
  
- <h1>なぞなぞ</h1>
+ <h1>練習問題7.5なぞなぞ</h1>
  <p>目を閉じてないと見られないものはなーに？</p>
  <p>
   答（漢字１文字で）：<input type="text" id="answer">
