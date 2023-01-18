@@ -25,9 +25,9 @@
  <script src="ex6-14.js"></script>
  <script src="ex7-1.js"></script>
  <script src="ex7-2.js"></script>
+ <script src="ex7-3.js"></script>
+ <script src="ex7-4.js"></script>
  <script src="ex7-5.js"></script>
- <script src="ex7-7.js"></script>
- <script src="ex7-8.js"></script>
 </head>
 
  
@@ -159,20 +159,27 @@
  <p>
   <input type="text" id="input1">+<input type="text" id="input2">
   <input type="button" value="計算" onclick="add();">
- </p>  
+ </p>
+ 
+ <h1>練習問題7.3　ボディマス指数</h1>
+ 身長<input type="text" id="shincho"> m
+ 体重<input type="text" id="taijuu"> kg
+ <input type="button" value="計算" onclick="add2();">
+ 
+  <h1>練習問題7.4　なぞなぞ</h1>
+ function nazo() {
+ if (document.getElementById('answer').value == '夢'){
+ alert('あたり！');
+ }
+ }
  
  <h1>練習問題7.5なぞなぞ</h1>
  <p>目を閉じてないと見られないものはなーに？</p>
  <p>
-  答（漢字１文字で）：<input type="text" id="answer">
-  <input type="button" value="解答" onclick="nazo();">
+  答（漢字１文字で）：<input type="text" id="answer1">
+  <input type="button" value="解答" onclick="nazo1();">
  </p>
  
- <input type="text" id="answer">
- <input type="button" value="解答" onclick="nazo();">
- 
- <input type="text" id="answer77">
- <input type="button" value="解答" onclick="onclick=" nazo77();">
- 
+
   </body>
 </html>
