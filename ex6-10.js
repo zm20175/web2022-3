@@ -1,8 +1,8 @@
 function imgchange()
 {
-document.getElementById('logo').src= './image/城西大学4.jpg';
+document.getElementById('logo').src= './image/off';
 }
 function imgchange1()
 {
-document.getElementById('logo').src='./image/城西大学3.jpg';
+document.getElementById('logo').src='./image/on';
 }
